@@ -1,2 +1,90 @@
+@font-face {
+  font-family: aquire;
+  src: url(../public/Aquire-BW0ox.otf);
+}
+@font-face {
+  font-family: firasans;
+  src: url(../public/FiraSans-Regular.ttf);
+}
 
-@import '../node_modules/bulma/bulma.sass'
+$title-family: aquire;
+$subtitle-family: firasans;
+
+$yellow: #fba428;
+$gray: #d3d3d3;
+
+$title-color: white;
+$subtitle-color: white;
+$title-weight: 400;
+$subtitle-weight: 400;
+
+.has-bg-grey {
+  background: #161616 !important;
+}
+
+.has-bg-light-grey {
+  background: rgba(54, 54, 54, 0.4) !important;
+  box-shadow: inset 0px 2px 4px rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
+  border-radius: 3px;
+}
+
+.divider {
+  border: 1px solid #363636;
+}
+
+.subtitle.is-7 {
+  color: #d3d3d3;
+}
+
+.button.is-link {
+  padding: 10px 40px;
+  background: #373fc5 !important;
+  border-radius: 3px;
+  &:hover {
+    background: $yellow !important;
+  }
+}
+
+.button.is-link {
+  padding: 10px 40px;
+  background: #373fc5 !important;
+  border-radius: 3px;
+  &:hover {
+    background: $yellow !important;
+  }
+}
+
+.button.is-grey {
+  background: rgba(54, 54, 54, 0.4) !important;
+  border-color: rgba(54, 54, 54, 0.4) !important;
+  color: white;
+  .is-counter {
+    color: $yellow;
+  }
+  &:hover {
+    background: rgba(54, 54, 54, 0.4) !important;
+    border-color: rgba(54, 54, 54, 0.4) !important;
+    color: white;
+  }
+}
+
+.loading {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  border-radius: 50%;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid $yellow;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@import '../node_modules/bulma/bulma.sass';
